@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+</head>
+<body>
+    <h1>Список пользователей из БД</h1>
+    <ul>
+        ${for user in Users}
+            <li>
+                <b>${user.Name}</b> — ${user.Email}, возраст: ${user.Age}
+            </li>
+        ${endfor}
+    </ul>
+</body>
+</html>
